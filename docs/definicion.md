@@ -1,0 +1,12 @@
+- **Clave de agrupación:** IP de origen. Cubre una IP que prueba muchas contraseñas contra un mismo usuario y una IP que prueba contraseñas contra muchos usuarios.
+- **Qué cuenta como fallo:** una línea de las filas 3 o 4 del catálogo (contraseña rechazada, con usuario existente o inexistente). Las filas 1, 2, 6, 7, 9 y 10 no se cuentan: duplican un fallo ya contado o no indican que se probara una contraseña.
+- **Umbral y ventana:** 10 fallos de una misma IP en 5 minutos (`>= 10`). Una conexión SSH admite hasta 3 intentos de contraseña, así que 3 conexiones fallidas suman 9. Con 10 hace falta superar ese caso.
+- **Tipo de ventana:** deslizante. Para cada fallo se cuentan los fallos de esa IP en los 5 minutos anteriores.
+- **Alerta que genera:** una alerta sobre la IP, sin bloquear nada. Incluye IP, número de fallos, primer y último timestamp, y usuarios probados.
+- **Año del timestamp:** el año actual por defecto. Se podrá forzar con `--year`. Detecta el cambio de año automaticamente.
+- **Acierto tras fallos:** si una IP que ya superó el umbral tiene un `Accepted` después, genera una alerta distinta y más grave, "posible compromiso". Solo cuenta si es la misma IP y ocurre dentro de 5 minutos tras el último fallo. Un acierto de otra IP, o tras pocos fallos, no genera alerta.
+- **Qué no detecta:**
+  - Ataques distribuidos: muchas IPs con pocos intentos cada una (agruparía por usuario para verlo).
+  - Atacantes que se quedan por debajo de 10 fallos en 5 minutos.
+  - Conexiones que se cierran sin intentar contraseña (fila 7, y fila 1 sin fila 3).
+  - La misma máquina vista como dos IPs (`::1` y `127.0.0.1`).
