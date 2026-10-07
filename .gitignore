@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Logs reales fuera, solo logs sintéticos de ejemplo
+*.log
+!tests/fixtures/*.log
