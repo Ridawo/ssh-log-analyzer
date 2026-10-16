@@ -1,0 +1,10 @@
+Oct 06 11:00:00 host01 sshd-session[7001]: Failed password for root from 198.51.100.50 port 45001 ssh2
+Oct 06 11:00:20 host01 sshd-session[7002]: Failed password for invalid user admin from 198.51.100.50 port 45002 ssh2
+Oct 06 11:00:40 host01 sshd-session[7003]: Failed password for invalid user test from 198.51.100.50 port 45003 ssh2
+Oct 06 11:01:00 host01 sshd-session[7004]: Failed password for invalid user oracle from 198.51.100.50 port 45004 ssh2
+Oct 06 11:01:20 host01 sshd-session[7005]: Failed password for invalid user ubuntu from 198.51.100.50 port 45005 ssh2
+Oct 06 11:01:40 host01 sshd-session[7006]: Failed password for invalid user postgres from 198.51.100.50 port 45006 ssh2
+Oct 06 11:02:00 host01 sshd-session[7007]: Failed password for invalid user git from 198.51.100.50 port 45007 ssh2
+Oct 06 11:02:20 host01 sshd-session[7008]: Failed password for invalid user ftp from 198.51.100.50 port 45008 ssh2
+Oct 06 11:02:40 host01 sshd-session[7009]: Failed password for invalid user user from 198.51.100.50 port 45009 ssh2
+Oct 06 11:03:00 host01 sshd-session[7010]: Failed password for invalid user guest from 198.51.100.50 port 45010 ssh2
