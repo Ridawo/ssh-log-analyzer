@@ -7,4 +7,4 @@ Oct 06 11:02:30 host01 sshd-session[1002]: Failed password for alice from 192.0.
 Oct 06 11:03:00 host01 sshd-session[1003]: Failed password for alice from 192.0.2.10 port 40003 ssh2
 Oct 06 11:03:30 host01 sshd-session[1003]: Failed password for alice from 192.0.2.10 port 40003 ssh2
 Oct 06 11:04:00 host01 sshd-session[1003]: Failed password for alice from 192.0.2.10 port 40003 ssh2
-Oct 06 11:04:30 host01 sshd-session[1004]: Failed password for alice from 192.0.2.10 port 40004 ssh2 
+Oct 06 11:04:30 host01 sshd-session[1004]: Failed password for alice from 192.0.2.10 port 40004 ssh2
