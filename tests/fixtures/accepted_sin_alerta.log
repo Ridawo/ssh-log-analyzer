@@ -1,0 +1,7 @@
+Oct 06 11:00:00 host01 sshd-session[9201]: Accepted password for alice from 198.51.100.15 port 49001 ssh2
+Oct 06 11:00:00 host01 sshd-session[9201]: pam_unix(sshd:session): session opened for user alice(uid=1000) by alice(uid=0)
+Oct 06 11:01:00 host01 sshd-session[9202]: Failed password for bob from 192.0.2.60 port 49002 ssh2
+Oct 06 11:01:03 host01 sshd-session[9202]: Failed password for bob from 192.0.2.60 port 49002 ssh2
+Oct 06 11:01:06 host01 sshd-session[9202]: Failed password for bob from 192.0.2.60 port 49002 ssh2
+Oct 06 11:01:30 host01 sshd-session[9203]: Accepted password for bob from 192.0.2.60 port 49003 ssh2
+Oct 06 11:01:30 host01 sshd-session[9203]: pam_unix(sshd:session): session opened for user bob(uid=1001) by bob(uid=0)
