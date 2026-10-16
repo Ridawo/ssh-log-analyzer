@@ -1,0 +1,12 @@
+Oct 06 11:00:00 host01 sshd-session[8001]: Failed password for alice from 192.0.2.40 port 46001 ssh2
+Oct 06 11:00:30 host01 sshd-session[8001]: Failed password for alice from 192.0.2.40 port 46001 ssh2
+Oct 06 11:01:00 host01 sshd-session[8001]: Failed password for alice from 192.0.2.40 port 46001 ssh2
+Oct 06 11:01:30 host01 sshd-session[8002]: Failed password for alice from 192.0.2.40 port 46002 ssh2
+Oct 06 11:02:00 host01 sshd-session[8002]: Failed password for alice from 192.0.2.40 port 46002 ssh2
+Oct 06 11:02:30 host01 sshd-session[8002]: Failed password for alice from 192.0.2.40 port 46002 ssh2
+Oct 06 11:03:00 host01 sshd-session[8003]: Failed password for alice from 192.0.2.40 port 46003 ssh2
+Oct 06 11:03:30 host01 sshd-session[8003]: Failed password for alice from 192.0.2.40 port 46003 ssh2
+Oct 06 11:04:00 host01 sshd-session[8003]: Failed password for alice from 192.0.2.40 port 46003 ssh2
+Oct 06 11:04:30 host01 sshd-session[8004]: Failed password for alice from 192.0.2.40 port 46004 ssh2
+Oct 06 11:05:10 host01 sshd-session[8005]: Accepted password for alice from 192.0.2.40 port 46005 ssh2
+Oct 06 11:05:10 host01 sshd-session[8005]: pam_unix(sshd:session): session opened for user alice(uid=1000) by alice(uid=0)
