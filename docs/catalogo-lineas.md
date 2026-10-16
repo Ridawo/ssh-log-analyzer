@@ -19,4 +19,4 @@
 - Variantes de la misma línea: `Failed password` con y sin `invalid user`; `Connection closed by` con `invalid user`, con `authenticating user` y sin usuario.
 - Líneas que duplican a otra: 2 → 1; 6 → 4 (no siempre); 9 y 10 → 4.
 - Unidad de fallo: una contraseña rechazada (filas 3 y 4). La fila 1 se usa solo como contexto.
-- Casos que mi detector NO cubre: <decide si cuentas la fila 7 y apúntalo aquí>.
+- Casos que mi detector NO cubre: la fila 7 no se cuenta. Una conexión que se cierra antes de dar usuario y contraseña no es un intento de login, así que un escaneo que solo abre y cierra conexiones pasa desapercibido. Está recogido en "Qué no detecta" de `definicion.md`.
